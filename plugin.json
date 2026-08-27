@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.clips",
+  "version": "0.1.14",
+  "description": "Clips: capture and browse screen/timeline clips. A Core→Shadow proxy that depends on the Shadow capture app for its recordings. Runs the out-of-process ryu-clips sidecar; Core proxies /api/clips/* to it. The Shadow record/browse surface is fully served out-of-process (the sidecar reads RYU_SHADOW_URL itself); URL/yt-dlp ingest and auto-file into the Clips Space require Core's kernel machinery and degrade cleanly in the standalone sidecar.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-clips",
+  "repository": "https://github.com/amajorai/ryu-clips",
+  "keywords": [
+    "clips",
+    "screen",
+    "capture",
+    "video"
+  ],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/clips",
+      "displayName": "Clips"
+    }
+  }
+}
