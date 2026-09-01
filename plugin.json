@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.clips",
+  "version": "0.1.14",
+  "description": "A local-first video repurposing workspace for importing or capturing recordings, finding transcript-led moments, reviewing short-form formats, editing vertical previews, and preparing exports. The out-of-process ryu-clips sidecar owns the Core→Shadow capture and ingest surface.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-clips",
+  "repository": "https://github.com/amajorai/ryu-clips",
+  "keywords": [
+    "clips",
+    "screen",
+    "capture",
+    "video",
+    "short-form",
+    "captions",
+    "inspiration"
+  ],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/clips",
+      "displayName": "Clips"
+    }
+  }
+}
